@@ -32,28 +32,29 @@
             <form class="form-control form" [formGroup]="formularioContacto" (ngSubmit)="enviar()">
                 <div class="input-group mb-3">
                     <p>
-                        Código:<input class="form-control" type="text" formControlName="codigo" placeholder="A00"/>
+                        Código:<input class="form-control" type="text" formControlName="codigo" placeholder="A00" />
                     </p>
                 </div>
                 <div class="input-group mb-3">
                     <p>
-                        Nombre:<input class="form-control" type="text" formControlName="nombre" placeholder="Nombre del producto"/>
+                        Nombre:<input class="form-control" type="text" formControlName="nombre"
+                            placeholder="Nombre del producto" />
                     </p>
                 </div>
                 <div class="input-group mb-3">
                     <p>
-                        Descripción:<textarea class="form-control" formControlName="descripcion" cols="22"
-                            rows="4" placeholder="Descripción del producto."></textarea>
+                        Descripción:<textarea class="form-control" formControlName="descripcion" cols="22" rows="4"
+                            placeholder="Descripción del producto."></textarea>
                     </p>
                 </div>
                 <div class="input-group mb-3">
                     <p>
-                        Precio:<input class="form-control" type="number" formControlName="precio" placeholder="0"/>
+                        Precio:<input class="form-control" type="number" formControlName="precio" placeholder="0" />
                     </p>
                 </div>
                 <div class="input-group mb-3">
                     <p>
-                        Cantidad:<input class="form-control" type="number" formControlName="cantidad" placeholder="0"/>
+                        Cantidad:<input class="form-control" type="number" formControlName="cantidad" placeholder="0" />
                     </p>
                 </div>
                 <div>
@@ -62,17 +63,17 @@
                 </div>
             </form>
         </div>
-        <div class="col-sm-7" >
-            <div class="card order">
+        <div class="col-sm-7 order">
+            <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">ORDEN DE COMPRA</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Detalle de productos:</h6>
                     <hr>
                     <table class="table">
                         <thead>
-                            <th scope="col" >Código</th>
-                            <th scope="col" >Nombre</th>
-                            <th scope="col" >Descripción</th>
+                            <th scope="col">Código</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Descripción</th>
                             <th scope="col">Cantidad</th>
                             <th scope="col">Precio</th>
                             <th scope="col">Acciones</th>
@@ -98,6 +99,7 @@
                     <hr>
                 </div>
             </div>
+            <div class="h-zigzag"></div><br />
         </div>
     </div>
 </div>
@@ -125,5 +127,3 @@
         </div>
     </div>
 </footer>
-
-
