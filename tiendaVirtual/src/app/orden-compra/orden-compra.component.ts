@@ -85,7 +85,7 @@ export class OrdenCompraComponent {
     this.products.forEach((element: any) => {
       this.subtotal = this.subtotal + element.precio;
       this.iva = this.subtotal*0.19;
-      this.total = this.subtotal + this.iva;
+      this.total = this.subtotal + Math.round(this.iva);
     });
   }
 }
